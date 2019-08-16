@@ -1,0 +1,6 @@
+适配器模式
+    是两个不兼容的接口之间的桥梁，将两个独立的类进行整合到一起的。
+    实例：
+        有一个MediaPlayer的接口，然后有一个实现类AudioPlayer,在默认的情况下，AudioPlayer是可以播放MP3的格式的音乐，
+        AdvancedMediaPlayer的接口，有一个实现这个接口的实现类，然后我们需要在AudioPlayer中播放其他的格式音乐的话，我们
+        就需要一个Adapter的格式来进行播放所有格式
