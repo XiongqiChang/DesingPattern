@@ -8,9 +8,7 @@ public class Singleton_03 {
 
     //这里注意的是我们采用volatilt的关键字对其进行修饰，这样的话就是可以保证线程安全的，不会发生重排序的过程的
     private  static  volatile  Singleton_03 singleton_03;
-
     private   Singleton_03(){}
-
     public static Singleton_03 getInstance(){
         //这个是第一轮的判断，得出的是当前是不是为空的，这样就为了一次就锁上了，导致了效率很低
         if (singleton_03 == null){
